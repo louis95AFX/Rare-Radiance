@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Radiance | Luxury Sterling Silver</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">RARE RADIANCE</div>
+
+        <ul class="nav-links">
+            <li><a href="#shop">Collections</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#contact">Concierge</a></li>
+        </ul>
+
+        <div class="cart-icon" id="cartBtn">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="v1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <div class="hero-overlay"></div>
+    
+        <div class="hero-content">
+            <p class="subtitle">925 STERLING SILVER</p>
+            <h1>Timeless Radiance</h1>
+            <p class="location">Handcrafted in Cape Town</p>
+            <a href="#shop" class="btn-luxury">Explore the Collection</a>
+        </div>
+    </section>
+    
+
+    <section id="shop" class="products">
+        <h2 class="section-title">Signature Pieces</h2>
+    
+        <div class="product-grid">
+    
+            <!-- Product 1 -->
+            <div class="product-card"
+                data-name="The Aurelia Statement Cuff"
+                data-price="1450"
+                data-description="A bold yet refined cuff, handcrafted for timeless elegance and modern sophistication.">
+                
+                <div class="img-container">
+                    <img src="1.jpeg">
+                    <div class="overlay">
+                        <div class="overlay-buttons">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <h3>The Aurelia Statement Cuff</h3>
+                <p class="price">R 1,450.00</p>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="product-card"
+                data-name="The Solstice Celestial Ring"
+                data-price="650"
+                data-description="A mystical 925 sterling silver band featuring a dual-faced sun and moon motif, designed to celebrate the eternal harmony of the cosmos.">
+    
+                <div class="img-container">
+                    <img src="2.jpeg">
+                    <div class="overlay">
+                        <div class="overlay-buttons">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <h3>The Solstice Celestial Ring</h3>
+                <p class="price">R 650.00</p>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="product-card"
+                data-name="The Wild Rose Drop Hoops"
+                data-price="890"
+                data-description="Elegant gold-toned hoops featuring delicate teardrop charms etched with a timeless rose motif, blending vintage romance with modern coastal luxury.">
+    
+                <div class="img-container">
+                    <img src="3.jpeg">
+                    <div class="overlay">
+                        <div class="overlay-buttons">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <h3>The Wild Rose Drop Hoops</h3>
+                <p class="price">R 890.00</p>
+            </div>
+    
+            <!-- Product 4 -->
+            <div class="product-card"
+                data-name="The Tidal Wave Sculptural Ring Set"
+                data-price="720"
+                data-description="A pair of avant-garde, open-wrap bands with fluid, organic curves that mimic the gentle motion of the Atlantic tide.">
+
+                <div class="img-container">
+                    <img src="4.jpeg">
+                    <div class="overlay">
+                        <div class="overlay-buttons">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>The Tidal Wave Sculptural Ring Set</h3>
+                <p class="price">R 720.00</p>
+                </div>    
+        </div>
+    </section>
+    
+    <!-- STORY -->
+    <section id="story" class="story">
+        <h2>Our Philosophy</h2>
+        <p>
+            Rare Radiance is devoted to timeless elegance. Each piece is handcrafted
+            from 925 sterling silver, designed to transcend trends and celebrate individuality.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <p>© 2025 Rare Radiance — Cape Town</p>
+        <p>Luxury Sterling Silver Jewellery</p>
+    </footer>
+
+    <!-- CART MODAL -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <button class="cart-close" id="cartClose">&times;</button>
+    
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="cart-total">Total: R <span id="cart-total">0</span></p>
+            <button class="btn-luxury">Checkout (Coming Soon)</button>
+        </div>
+    </div>
+    
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/27762045576" class="whatsapp-float" target="_blank">
+        SPEAK WITH A SPECIALIST
+    </a>
+
+    <script src="script.js"></script>
+    <div class="details-modal" id="detailsModal">
+        <div class="details-content">
+            <button class="details-close" id="detailsClose">&times;</button>
+    
+            <h2 id="detailsTitle"></h2>
+            <p id="detailsDescription"></p>
+            <p class="price">R <span id="detailsPrice"></span></p>
+    
+            <button class="btn-luxury" id="detailsAddToCart">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div id="toast" class="toast">Added to cart</div>
+</body>
+</html>
