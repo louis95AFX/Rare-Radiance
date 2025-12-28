@@ -407,6 +407,25 @@ body {
 }
 
 /* --- Mobile Styling (Max-width 768px) --- */
+
+/* --- Target extremely small screens --- */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 5%; /* Reduces vertical padding but keeps horizontal buffer */
+        gap: 10px; /* Ensures logo and icons don't touch */
+    }
+
+    .logo {
+        font-size: 1.2rem; /* Scales down the brand name slightly to prevent overlap */
+        letter-spacing: 2px;
+    }
+
+    .nav-icons-container {
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Provides explicit space between the burger and the cart icon */
+    }
+}
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
